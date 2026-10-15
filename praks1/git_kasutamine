@@ -4,12 +4,22 @@ installi - apt-get install git
 esmakordselt:
 
 a) seadista - määra kasutajanimi, email, editor
-git config --global user.name "Ees Perenimi"
-git config --global user.email kasutaja@nimi
+git config --global user.name "Rasmus Lepp"
+git config --global user.email rasmus.lepp@voco.ee
 git config --global core.editor nano
 
 b) loo kataloog, kus hakkad skriptima
-mkdir skriptimine
+mkdir /home/user/skriptimine/
 
 c) sisene antud kausta
-cd skriptimine
+cd /home/user/skriptimine
+
+d) tekita lokaalne repositoorium git süsteemi jaoks antud kaustas 
+git init
+
+remote seadistamine:
+e) git remote add nimi github:aadress
+git remote add skriptimine git@github.com:kasutajanimi/reponimi.git
+
+f) git remote kontroll
+git remote -v
